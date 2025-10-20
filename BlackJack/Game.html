@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ブラックジャック</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <section>
+    <button id="homeBtn" onclick="location.href='Home.html'" aria-label="ホームに戻る"></button>
+
+    <h1 class="title">
+      <img src="images/spade.png" alt="スペード" class="title-icon">
+      ブラックジャック
+      <img src="images/heart.png" alt="ハート" class="title-icon">
+    </h1>
+
+    <div class="table-container">
+      <div class="zone">
+        <h2>ディーラー</h2>
+        <div id="dealer-cards" class="cards"></div>
+        <div id="dealer-score" class="score">合計: ???</div>
+      </div>
+      <div class="zone">
+        <h2>あなた</h2>
+        <div id="player-cards" class="cards"></div>
+        <div id="player-score" class="score">合計: 0</div>
+      </div>
+    </div>
+
+    <div class="bet-wrapper">
+      <div class="bet-zone">
+        <label for="bet" style="display:flex; align-items:center; gap:0.3em;">
+          ベット: 
+          <input type="number" id="bet" min="1" max="100" value="10">
+          <span>coin</span>
+        </label>
+      </div>
+      <div id="betBtnWrapper">
+        <button onclick="restart()" id="betBtn">ベット</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="doubleDown()" id="doubleBtn" class="danger">ダブルダウン</button>
+      <button onclick="hit()" id="hitBtn">ヒット</button>
+      <button onclick="stand()" id="standBtn">スタンド</button>
+    </div>
+
+    <div id="message"></div>
+    <div id="coinDisplay">コイン: <span id="coinBalance">100</span></div>
+    <div id="keyGuide">
+      ↑ ↓：±1　← →：±10<br>
+      スペースキー：ベット<br>
+      左Shiftキー：ヒット<br>
+      Enterキー：ダブルダウン<br>
+      Tabキー：スタンド
+    </div>
+  </section>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

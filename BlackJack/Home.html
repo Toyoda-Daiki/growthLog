@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/home.css">
+  <title>ブラックジャック｜ホーム</title>
+</head>
+<body>
+  <section>
+    <h1><span class="mark-left"></span> ブラックジャック <span class="mark-right"></span></h1>
+    <p>
+      ようこそブラックジャックへ！<br>
+      ディーラーに勝ってコインを増やそう。
+    </p>
+
+    <div class="button-group">
+      <button onclick="startGame()">ゲームスタート</button>
+      <button onclick="goToRulePage()">ルールを見る</button>
+    </div>
+  </section>
+
+  <script>
+    function startGame() {
+      window.location.href = "Game.html";
+    }
+
+    function goToRulePage() {
+      window.location.href = "Rule.html";
+    }
+  </script>
+</body>
+</html>
