@@ -1,0 +1,742 @@
+@charset "UTF-8";
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.SNS img {
+  height: 32px;
+  width: 32px;
+}
+
+/* ================ */
+/* ヘッダー================ */
+header {
+  position: relative;
+  background: url(../images/tainanHead1.jpg) no-repeat right center/cover; 
+  max-width: 1366px;
+  height: 768px;
+}
+header h1 img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 94px;
+  left: calc(50% - 320px);
+  object-fit: contain;
+}
+header nav {
+  width: max-content;
+  display: flex;
+}
+header nav img {
+  position: absolute;
+  left: 103px;
+  top: 20px;
+  width: 133px;
+  height: 54px;
+}
+header nav ul {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 103px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  height: 1em;
+  margin: 0 auto;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li:last-of-type{
+  margin-right: 0;
+}
+header .SNS {
+  position: absolute;
+  left: 103px;
+  bottom: 80px;
+  width: 32px;
+  height: 176px;
+}
+header .SNS ul {
+  width: 32px;
+  height: 176px;
+}
+header .SNS ul li {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 40px;
+}
+header .SNS ul li:last-of-type {
+  margin-bottom: 0;
+}
+.intro {
+  position: absolute;
+  right: 103px;
+  bottom: 20px;
+  width: 467px;
+  color: #fff;
+}
+
+/* ================ */
+/* パンくず================ */
+.breadNav {
+  display: flex;
+  align-items: center;
+  max-width: 1366px;
+  height: 58px;
+  border-bottom: 1px solid black;
+  margin: 0 auto 20px;
+}
+.breadNav p {
+  max-width: 1200px;
+  padding-left: 103px;
+  font-size: 20px;
+}
+
+/* ================ */
+h2 {
+  width: 530px;
+  height: 96px;
+  text-align: center;
+  line-height: 2;
+  background: url(../../images/bgFrame.png) no-repeat center center / cover;
+  margin: 20px auto 160px 20px;
+}
+h2 span {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+/* ================ */
+/* Attraction 観光名所================ */
+.attraction h3 {
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.attraction .outerWrap {
+  margin: 0 20px;
+}
+.attraction .middleWrap {
+  position: relative;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+.attraction .middleWrap::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  content: "";
+  width: 480px;
+  border-bottom: 1px solid black;
+}
+.attraction .innerWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.innerWrap.atr1 {
+  height: 304px;
+  margin-bottom: 40px;
+}
+.innerWrap.atr1.adjust {
+  height: 334px;
+}
+.green {
+  background-color: rgba(100, 201, 155, 0.2) ;
+}
+.atr1 img {
+  width: 600px;
+  height: 304px;
+}
+.atr1.adjust img {
+  height: 334px;
+}
+.atr1 p {
+  width: 500px;
+  height: 304px;
+  padding: 40px;
+  text-align: justify;
+}
+.atr1.adjust p {
+  height: 334px;
+}
+.atr2 img {
+  width: 290px;
+  height: 167px;
+}
+.atr2 img:first-child {
+  margin-right: 20px;
+}
+.atr2 p {
+  width: 500px;
+  height:160px;
+  padding: 48px 40px;
+}
+.atr2 .textContents p:last-child {
+  font-weight: bold;
+}
+.attraction .textContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.attraction .textContents p {
+  height: auto;
+  padding: 0;
+}
+
+/* ================ */
+/* グルメ================ */
+.gourmet h2 {
+  margin: 20px 20px 80px auto;
+}
+.gourmet img {
+  width: 510px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+.gourmet .grm2 img {
+  object-position: top;
+}
+.gourmet .outerWrap {
+  padding-bottom: 20px;
+  margin: 0 60px;
+}
+.gourmet .textContents {
+  width: 420px;
+  padding: 60px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 60px;
+}
+.gourmet h3 span {
+  font-size: 24px;
+  margin-left: 20px;
+}
+.gourmet .textContents p {
+  width: 420px;
+}
+.gourmet .middleWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.gourmet .innerWrap {
+  position: relative;
+  width: 510px;
+  margin-bottom: 60px;
+}
+.gourmet .innerWrap::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  content: "";
+  width: 510px;
+  border-bottom: 1px solid black;
+}
+.gourmet .innerWrap p {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+/* ボタン追加 */
+.gourmet .innerWrap button[type="button"]{
+  font-size: 20px;
+  line-height: 1;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ================ */
+/* モーダル================ */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 999;
+  background-color: #00000025;
+}
+body.modalOpen {
+  overflow: hidden;
+}
+.modalOverlay.active {
+  display: flex;
+}
+.modalContent {
+  background-color: #f4f4f4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 675px;
+  height: 675px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.modalImg {
+  width: 555px;
+  height: 555px;
+  margin: 60px 60px;
+}
+.modalImg img {
+  width: 555px;
+  height: 555px;
+  object-fit: cover;
+  object-position: center;
+}
+.closeBtn {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.closeBtn img {
+  width: 36px;
+  height: 36px;
+}
+
+/* ================ */
+/* ピックアップ================ */
+.pickUp h2 {
+  margin-bottom: 80px;
+}
+.pickUp .outerWrap {
+  margin: 0 60px;
+}
+.pickUp .textContents {
+  width: 420px;
+  height: 204px;
+  margin-bottom: 60px;
+}
+.pickUp h3 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.pickUp h3::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  content: "";
+  width: 420px;
+  border-bottom: 1px solid black;
+}
+.pickUp .middleWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.pickUp .pu1 img {
+  width: 600px;
+  height: 340px;
+}
+.pickUp .pu1 p {
+  width: 420px;
+  text-align: justify;
+}
+.pickUp .pu2 img {
+  width: 510px;
+  height: 214px;
+}
+.pickUp .pu3 {
+  display: flex;
+  justify-content: center;
+}
+.pickUp .pu4 img {
+  width: 600px;
+  height: 325px;
+}
+.pickUp .pu5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+  height: 325px;
+}
+.pickUp .pu5 img {
+  width: 420px;
+  height: 209px;
+  object-fit: cover;
+}
+.middleWrap.line {
+  position: relative;
+  padding-bottom: 80px;
+}
+.middleWrap.line::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  content: "";
+  width: 480px;
+  border-bottom: 1px solid black;
+}
+
+
+@media screen and (max-width:768px) {
+  body {
+    max-width: 100%;
+    margin: 0;
+  }
+  section {
+    width: stretch;
+    margin: 0 20px;
+  }
+  h2 {
+    width: 220px;
+    height: 40px ;
+    margin: 0 0 40px;
+    font-size: 24px;
+    line-height: 1.6;
+    background-size: 220px 40px;
+  }
+  h2 span {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+/* ================ */
+/* ヘッダー================ */
+  header {
+    width: auto;
+    max-width: 100%;
+    height: 667px;
+  }
+  header h1 img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 199px;
+    height: 372px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .SNS ul {
+    height: 136px;
+  }
+  header .SNS ul li {
+    margin-bottom: 20px;
+  }
+  header nav img {
+    top: 8px;
+    left: 20px;
+    width: 111px;
+    height: 45px;
+  }
+  header .SNS {
+    left: 20px;
+    bottom: 70px;
+    height: 136px;
+  }
+  .intro {
+    right: 20px;
+    bottom: 8px;
+    width: 247px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+
+/* ================ */
+/* パンくず================ */
+  .breadNav {
+    max-width: 100%;
+    height: 32px;
+  }
+  .breadNav p {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+/* ================ */
+/* 観光名所================ */
+  .attraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .attraction .middleWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .attraction .middleWrap::after {
+    width: 66%;
+  }
+  .attraction .innerWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .attraction .innerWrap > * {
+    margin-bottom: 20px;
+  }
+  .innerWrap.atr2 p {
+    margin-bottom: 0;
+  } 
+  .innerWrap.atr2 .textContents {
+    margin-bottom: 0;
+    padding: 8px 0;
+  }
+  .innerWrap.atr1 {
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  .atr1 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 221px;
+  }
+  .atr1 p {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 8px 36px;
+  }
+  .innerWrap.atr2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .innerWrap.atr2 div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .atr2 img {
+    width: 48%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .atr2 p {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 8px 36px;
+  }
+
+  /* ================ */
+  /* グルメ================ */
+  .gourmet h2 {
+    margin: 0 auto 60px;
+  }
+  .gourmet img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 67 / 26;
+    margin-bottom: 8px;
+  }
+  .gourmet .outerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .gourmet .textContents {
+    width: 66%;
+    padding: 16px 0;
+  }
+  .gourmet h3 {
+    text-align: center;
+  }
+  .gourmet h3 span {
+    display: block;
+    padding-top: 8px;
+    margin: 0;
+    font-size: 12px;
+  }
+  .gourmet .textContents p {
+    width: auto;
+  }
+  .gourmet .middleWrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  .gourmet .innerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .gourmet .innerWrap p {
+    width: 66%;
+    margin-bottom: 8px;
+  }
+  .gourmet .innerWrap p:last-child {
+    text-align: end;
+    margin-bottom: 20px;
+  }
+  .gourmet .innerWrap::after {
+    width: 66%;
+  }
+  /* ボタン追加 */
+  .gourmet .innerWrap button[type="button"]{
+    font-size: 12px;
+    width: 60px;
+    height: 12px;
+    margin: 0 0 20px;
+  }
+  .modalOpen {
+    width: 66%;
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  /* ================ */
+  /* モーダル(SP)================ */
+  .modalContent {
+    max-width: 375px;
+    height: 375px;
+  }
+
+  .modalImg {
+    width: 283px;
+    height: 283px;
+    margin: 46px 46px;
+  }
+  .modalImg img {
+    width: 283px;
+    height: 283px;
+  }
+
+  .closeBtn {
+    width: 28px;
+    height: 28px;
+    top: 8px;
+    right: 8px;
+  }
+  .closeBtn img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* ================ */
+  /* ピックアップ================ */
+  .pickUp img {
+    margin-bottom: 20px;
+  }
+  .pickUp h2 {
+    margin: 20px auto 60px;
+  }
+  .pickUp .outerWrap {
+    margin: 0;
+  }
+  .pickUp .textContents {
+    width: auto;
+    height: fit-content;
+    margin: 0 56px 40px
+  }
+  .pickUp h3 {
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  .pickUp h3::after {
+    width: 100%;
+  }
+  .pickUp .middleWrap {
+    flex-direction: column;
+    margin: 0 56px 20px;
+  }
+  .pickUp .pu1 img {
+    width: 100%;
+    height: auto;
+    min-height: 132px;
+    aspect-ratio: 221 / 132;
+  }
+  .pickUp .pu1 p {
+    width: 100%;
+  }
+  .pickUp .pu2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 0 20px;
+    gap: 20px;
+  }
+  .pickUp .pu2 img {
+    width: auto;
+    min-width: 157.5px;
+    height: auto;
+    margin-bottom: 0;
+    object-fit: cover;
+    aspect-ratio: 35 / 18;
+  }
+  .pickUp .pu4 img,
+  .pickUp .pu5 img {
+    width: 46vw;
+    min-width: 175px;
+    height: auto;
+    aspect-ratio: 175 / 122;
+  }
+  .pickUp .pu5 img {
+    margin-bottom: 0;
+  }
+  .pickUp .pu5 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .pickUp .middleWrap:has(.pu5) {
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .pickUp .middleWrap:has(.pu5)::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .pickUp .pu5 p {
+    margin-bottom: 20px;
+  }
+}
+
+
+

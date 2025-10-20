@@ -1,0 +1,755 @@
+@charset "UTF-8";
+
+section {
+  width: 1200px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 48px;
+}
+img {
+  max-width: 100%;
+}
+.SNS img {
+  height: 32px;
+  width: 32px;
+}
+
+/* ================ */
+/* ヘッダー================ */
+header {
+  position: relative;
+  background: url(../images/topHead1.jpg) no-repeat right center/cover;
+  width: 1366px;
+  height: 768px;
+}
+.top {
+  width: 1200px;
+  margin: 0 auto;
+}
+header h1 img {
+  position: absolute;
+  width: 780px;
+  height: 314px;
+  transform: translate(-50%, -50%);
+  top: 42%;
+  left: 45%;
+}
+header nav {
+  width: max-content;
+  display: flex;
+}
+header nav img {
+  position: relative;
+  left: 103px;
+  top: 20px;
+  width: 133px;
+  height: 54px;
+}
+header nav ul {
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 536px;
+  font-size: 24px;
+  color: #fff;
+  height: 1em;
+  margin: 0 auto;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li:last-of-type{
+  margin-right: 0;
+}
+
+
+.gallery h2,
+.travel h2 {
+  width: 530px;
+  height: 96px;
+  text-align: center;
+  line-height: 2;
+  background: url(../common/images/bgFrame.png) no-repeat center center / cover;
+  margin: 20px auto 160px 20px;
+}
+h2 span {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+
+/* ================ */
+/* フォルモサ================ */
+.formosa {
+  width: 1366px;
+}
+.formosa img {
+  width: 636px;
+  height: 298px;
+}
+.formosa .flag {
+  width: 104px;
+  height: 78px;
+}
+.formosaTop {
+  background: url(../images/topFormosa1.jpg) no-repeat center center / cover;
+}
+.formosaBtm {
+  background: url(../images/topFormosa3.jpg) no-repeat center center / cover;
+}
+.formosa > div {
+  display: flex;
+  justify-content: center;
+}
+.formosa > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 458px;
+  margin: 0 20px;
+}
+.formosa .imgContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 298px;
+}
+.formosa .imgContents div {
+  margin-right: auto;
+}
+.formosa .imgContents h3 {
+  width: 361px;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  line-height: 1;
+  font-size: 32px;
+}
+.formosa .textContents {
+  padding: 60px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.formosaBtm p {
+  width: 420px;
+  height: 160px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* ================ */
+/* ギャラリー================ */
+.gallery {
+  width: 100%;
+  overflow-x: hidden;
+}
+.galleryTitle {
+  width: 1200px;
+  margin: 0 auto;
+}
+.gallery ul {
+  position: relative;
+  left: -25%;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: 467px;
+  gap: 80px;
+  padding: 0 120px;
+  margin-bottom: 60px;
+}
+.gallery ul li {
+  width: 295px;
+}
+.sliderIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indicator {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 0 30px;
+  background-color: #777575;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#next, #prev {
+  width: 64px;
+  height: 64px;
+  margin: 0 30px;
+  cursor: pointer;
+}
+#next {
+  transform: rotate(90deg);
+}
+#prev {
+  transform: rotate(-90deg);
+}
+.indicator.slActive {
+  background-color: #000;
+}
+#slider {
+  transition: 1.0s;
+}
+
+/* ================ */
+/* トラベル================ */
+.travel h2 {
+  margin: 20px 20px 120px auto;
+}
+.innerWrap {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.innerWrap::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 480px;
+  border-bottom: 1px solid black;
+}
+.travel .textContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 420px;
+  height: 128px;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-right: 220px;
+}
+.travel .textContents p {
+  height: auto;
+  padding: 60px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: justify;
+}
+.travel .imgContents {
+  position: relative;
+  width: 400px;
+  height: 611px;
+}
+.travel .imgContents > img{
+  width: 225px;
+  height: 508px;
+}
+.travel .imgContents a {
+  position: absolute;
+  display: inline-block;
+  width: 99px;
+  height: 209px;
+  z-index: 10;
+}
+.travel .imgContents a img {
+  width: 99px;
+  height: 209px;
+}
+.travel .taipei {
+  bottom: 350px;
+}
+.travel .taichu {
+  left: -80px;
+  bottom: 300px;
+}
+.travel .tainan {
+  left: -10px;
+  bottom: 0;
+}
+.travel a {
+  transition: all 0.3s ease;
+}
+.travel a:hover {
+  transform: scale(1.40);
+}
+
+/* ================ */
+/* イベント================ */
+.event h2{
+  width: 530px;
+  height: 96px;
+  text-align: center;
+  line-height: 2;
+  background: url(../common/images/bgFrame.png) no-repeat center center / cover;
+  margin: 20px auto 160px 20px;
+}
+.event h2 span {
+  margin-left: 20px;
+  font-size: 24px;
+}
+.event h3{
+  font-size: 36px;
+  line-height: 1.6;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.event img{
+  width: 580px;
+  height: 396px;
+  margin: 0 px 30px 20px;
+}
+.event h4{
+  width: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 32px;
+  line-height: 1;
+}
+.rantanText,
+.partyText{
+  width: 314px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+.event p{
+  font-size: 20px;
+  margin: 0 auto;
+}
+.event .schedule {
+  /* display: inline-block; */
+  width: 425px;
+  margin: 0 auto 32px;
+  line-height: 1;
+}
+.rantanLeft, .rantanRight, .partyLeft, .partyRight {
+  width: 580px;
+  height: 396px;
+}
+.rantanRight p,
+.partyRight p {
+  width: 430px;
+}
+.rantanRight div p,
+.partyRight div p{
+  width: 314px;
+  text-align: justify;
+}
+.rantanContent,
+.partyContent{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.rantanRight, .partyRight {
+  padding-top: 32px;
+}
+.partyRight > p {
+  text-align: center;
+}
+
+/* ================ */
+/* インフォメーション================ */
+.info {
+  display: flex;
+  width: 1200px;
+  height: 720px;
+}
+.info1 {
+  width: 1040px;
+  height: 560px;
+  margin: 80px auto;
+  border: 1px solid #000;
+}
+.info1 h2 {
+  width: 242px;
+  height: 1em;
+  font-size: 40px;
+  margin: 40px auto 80px;
+}
+.info2 {
+  display: flex;
+  align-items: center;
+}
+.info3, .info4 {
+  width: 450px;
+  height: 320px;
+}
+.info3 {
+  margin: 0 30px 80px 40px;
+}
+.info3 ul li, .info4 ul li {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.info3 ul li::before, .info4 ul li:not(:nth-of-type(5)):not(:nth-of-type(6)):not(:nth-of-type(7))::before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: black;
+  margin-right: 0.1em;
+  vertical-align: baseline;
+}
+.info4 {
+  margin: 0 40px 80px 3%;
+}
+.info4 ul li .noStyle {
+  display: none;
+}
+.info4 ul li .subList{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+.info3 .spell {
+  margin-left: 0.8em;
+}
+
+/* ================ */
+/* レスポンシブ================ */
+@media screen and (max-width:768px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  section {
+    width: stretch;
+    margin: 0 20px;
+    padding-bottom: 0;
+  }
+  h2 {
+    width: 220px;
+    height: 40px ;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  h2 span {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .gallery h2,
+  .travel h2 {
+    width: 220px;
+    height: 40px;
+    line-height: 1.6;
+    margin: 20px auto 60px;
+    background-size: 220px 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+/* ================ */
+/* ヘッダー================ */
+  header {
+    width: auto;
+    max-width: 100%;
+    height: 667px;
+    background-position: center center;
+  }
+  header h1 img {
+    top: 50%;
+    left: 50%;
+    width: 335px;
+    height: 135px;
+    transform: translate(-50%, -100%);
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav img {
+    display: none;
+  }
+  
+  .intro {
+    right: 20px;
+    bottom: 8px;
+    width: 247px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+
+/* ================ */
+/* フォルモサ================ */
+  .formosa {
+    width: 100%;
+    margin: 0;
+  }
+  .formosa h2 {
+    height: 20px;
+    font-size: 20px;
+    line-height: 1.0;
+  }
+  .formosa img {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 0 20px 60px;
+    aspect-ratio: 335 / 139;
+  }
+  .formosa .flag {
+    width: 32px;
+    height: 24px;
+    margin: 20px auto 40px;
+  }
+  .formosaTop {
+    min-height: 407px;
+    width: 100%;
+    height: 80vw;
+  }
+  .formosa > div > div {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .formosa .imgContents {
+    justify-content: flex-start;
+    flex: none;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .formosaTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .formosa .imgContents h3 {
+    width: 132px;
+    padding: 20px 0 12px;
+    font-size: 12px;
+  }
+  .formosa .textContents {
+    align-items: center;
+    width: 223px;
+    padding: 12px 0;
+    margin: 20px 0 60px;
+  }
+  .formosaBtm {
+    min-height: 399px;
+    width: 100%;
+    height: 80vw;
+  }
+  .formosaBtm p {
+    font-size: 12px;
+    width: 223px;
+    height: auto;
+  }
+/* ================ */
+/* ギャラリー================ */
+  .gallery {
+    margin: 0;
+  }
+  .galleryTitle {
+    width: 100%;
+  }
+  .gallery ul {
+    left: calc((100% - 1555px) / 2); /* (要素幅＋gap * 5) - 20px(gap1個分) */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .indicator {
+    width: 18px;
+    height: 18px;
+    margin: 20px 20px 40px;
+  }
+  #next, #prev {
+    display: none;
+  }
+
+  /* ================ */
+  /* トラベル================ */
+  .travel h2 {
+    margin: 20px auto 60px;
+    background-size: 220px 40px;
+  }
+  .innerWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .travel .textContents {
+    width: 220px;
+    height: auto;
+    margin-right: 0;
+  }
+  .travel .textContents p {
+    padding: 12px 0;
+  }
+  .travel .imgContents {
+    width: 180px;
+    height: 475px;
+    padding: 60px 0 0;
+    margin-bottom: 120px;
+  }
+  .travel .imgContents > img {
+    width: 180px;
+    height: 355px;
+  }
+  .travel .imgContents a {
+    width: 59px;
+    height: 126px;
+  }
+  .travel .imgContents a img {
+    width: 59px;
+    height: 126px;
+  }
+  .travel .taipei {
+    bottom: 238px;
+    right: -38px;
+  }
+  .travel .taichu {
+    left: -37px;
+    bottom: 209.6px;
+  }
+  .travel .tainan {
+    left: 0;
+    bottom: 0;
+  }
+  .travel .innerWrap {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+  .travel .innerWrap::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+    width: 223px;
+    border-bottom: 1px solid black;
+  }
+
+  /* ================ */
+  /* イベント================ */
+  .event {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    height: 1116px;
+  }
+  .event h2 {
+    width: 220px;
+    height: 40px;
+    line-height: 1.6;
+    margin: 0 auto 60px;
+    background-size: 220px 40px;
+  }
+  .event h2 span {
+    font-size: 12px;
+    margin: 0;
+  }
+  .rantanContent,
+  .partyContent {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+  .rantanContent {
+    height: 386px;
+    margin-bottom: 40px;
+  }
+  .rantanLeft, .rantanRight, .partyLeft, .partyRight {
+    width: 335px;
+  }
+  .rantanLeft, .partyLeft {
+    height: 194px;
+  }
+  .rantanRight {
+    height: fit-content;
+    padding-top: 20px;
+  }
+  .partyRight {
+    height: fit-content;
+    padding-top: 20px;
+  }
+  .event h4 {
+    width: fit-content;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .event h3 {
+    font-size: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .event .rantanTitle {
+    line-height: 1;
+  }
+  .event img {
+    width: 100%;
+    height: 194px;
+    object-fit: cover;
+    object-position: top 70%;
+  }
+  .event h4 {
+    width: fit-content;
+    font-size: 12px;
+  }
+  .event p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .event .schedule {
+    width: fit-content;
+    margin: 0 auto 20px;
+  }
+  .rantanText,
+  .partyText {
+    padding: 8px 0;
+    width: 223px;
+    margin-bottom: 40px;
+  }
+  .rantanRight p,
+  .partyRight p {
+    width: 223px;
+  }
+  .rantanRight div p,
+  .partyRight div p {
+    width: 223px;
+    padding: 12px 0;
+  }
+
+  /* ================ */
+  /* インフォメーション================ */
+  .info {
+    width: stretch;
+    height: fit-content;
+  }
+  .info1 {
+    width: 100%;
+    height: 544px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .info1 h2 {
+    width: 123px;
+    height: 20px;
+    font-size: 20px;
+    margin: 20px auto 40px;
+  }
+  .info2 {
+    flex-direction: column;
+  }
+  .info3, .info4 {
+    width: stretch;
+    height: 192px;
+    margin: 0 20px 40px;
+  }
+  .info3 ul li, .info4 ul li {
+    font-size: 12px;
+  }
+}
+
