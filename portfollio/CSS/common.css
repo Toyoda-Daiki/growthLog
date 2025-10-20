@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+/* ===== HTML & BODY ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  background: #faf8f8;
+}
+
+/* ===== 見出し ===== */
+h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  padding: 0 16px 4px 16px;
+  border-bottom: 3px solid rgba(161, 220, 250, 0.5);
+  background-image: linear-gradient(135deg, #86d1f7, #c5fdc5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== 画像 ===== */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: auto;
+}
+
+/* ===== ヘッダー ===== */
+header {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: fixed;
+  width: 100%;
+  padding-right: 5%;
+  background: rgba(51,51,51,0.8);
+  color: #fff;
+  z-index: 1000;
+}
+
+header nav ul li {
+  position: relative;
+  width: 12%;
+  text-align: center;
+}
+
+header nav ul li a {
+  display: block;
+  font-size: 20px;
+  padding: 8px 0px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-image: linear-gradient(135deg, #86d1f7, #c5fdc5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== ドロップダウンメニュー ===== */
+header .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-width: 150px;
+  background: rgba(51,51,51,0.8);
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+header .dropdown-menu li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header .dropdown-menu li a {
+  width: fit-content;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header .dropdown-menu li a:hover {
+  background-image: linear-gradient(135deg, #86d1f7, #c5fdc5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header .dropdown.open .dropdown-menu {
+  display: block;
+}
+
+
+/* ===== セクション共通 ===== */
+section {
+  padding: 80px 20px 0;
+}
+
+section:last-of-type {
+  padding-bottom: 80px;
+}
+
+
+/* ===== ドロワー ===== */
+.menuBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+.openText {
+  position: absolute;
+  left: 50%;
+  bottom: -14.4px;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1;
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.openText.openAnimate {
+  opacity: 0;
+}
+
+.openText.closeAnimate {
+  opacity: 1;
+}
+
+.drawerOpenBtn {
+  width: 100%;
+  height: 100%;
+  background: url(../image/drawerOpenIcon.png) center center / cover;
+}
+
+@media screen and (max-width:768px) {
+  .menuBtn {
+    display: block;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -225px;
+  width: 225px;
+  height: 667px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s;
+  z-index: 1000;
+}
+
+.drawer .drawerTop {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 72px;
+  margin-bottom: 84px;
+}
+
+.drawer .drawerCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  background: url(../image/drawerCloseIconV3.png) center center / cover;
+}
+
+.drawer ul {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.drawer ul li {
+  width: fit-content;
+  margin: 0 auto 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.drawerShow {
+  transform: translate(-225px, 0);
+}
+
+/* ===== アニメーション ===== */
+@keyframes rotateOut {
+  from { transform: rotate(0deg); opacity: 1; }
+  to { transform: rotate(180deg); opacity: 0; }
+}
+
+@keyframes rotateIn {
+  from { transform: rotate(-180deg); opacity: 0; }
+  to { transform: rotate(0deg); opacity: 1; }
+}
+
+.rotate-out {
+  animation: rotateOut 0.5s forwards;
+}
+
+.rotate-in {
+  animation: rotateIn 0.5s forwards;
+}
+
+/* ===== フェードイン共通 ===== */
+.fade-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-left {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-right {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== トップに戻るボタン ===== */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, #86d1f7, #aaf3aa);
+  border: 1px solid #333;
+  cursor: pointer;
+  opacity: 0;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px 0px 0px #7a9c7a;
+  transition: opacity 0.3s, background 0.3s, transform 0.3s;
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#backToTop:hover {
+  background: linear-gradient(135deg, #a0a5fa, #9fce9f);
+  transform: translateY(-3px);
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #333;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #9fa5ff;
+}
+
+/* ===== メディアクエリ ===== */
+@media screen and (max-width:1024px) {
+  .worksCate .sec {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  /* ===== ヘッダー・ナビ ===== */
+  header nav ul {
+    display: none;
+  }
+
+  /* ===== 見出しサイズ調整 ===== */
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
