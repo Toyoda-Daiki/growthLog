@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.searchResultSec {
+  padding-bottom: 120px;
+}
+
+.searchResultCon, .searchEmptyCon, .myBestCon {
+  padding: 80px 0;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #E6CCB2;
+}
+
+.searchResultCon, .searchEmptyCon {
+  border-top: 1px solid #E6CCB2;
+}
+
+.searchEmptyCon {
+  display: grid;
+  gap: 20px;
+}
+
+.myBestCon {
+  padding: 0 0 80px;
+}
+
+.prodList, .myBestList {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 120px 60px;
+  margin: 0 auto;
+}
+
+.prodList li, .myBestList li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+  min-height: 500px;
+}
+
+.prodList li img, .myBestList li img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prodList li .prodInfo p, .myBestList li .prodInfo p {
+  font-size: 24px;
+  color: #7F5539;
+  line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prodList li .prodPrice, .myBestList li .prodPrice {
+  font-size: 24px;
+  color: #BF0000;
+}
+
+.prodList li .toCart, .myBestList li .toCart {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.prodList li .toCart .cartBtn, .myBestList li .toCart .cartBtn {
+  color: #fff;
+  background-color: #7F5539;
+  padding: 16px 60px;
+  text-align: center;
+}
+
+.myBestCon h3 {
+  font-size: 24px;
+  width: fit-content;
+  line-height: 1;
+  margin: 0 auto;
+  color: #7F5539;
+  margin: 40px auto;
+}
+.searchResultSec .noResult {
+  font-size: 24px;
+  color: #7F5539;
+  text-align: center;
+}
+
+.searchResultSec .backToTop,
+.searchResultSec .toProducts,
+.toProductsBtn {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #7F5539;
+  margin-left: auto;
+  margin-right: 0;
+}

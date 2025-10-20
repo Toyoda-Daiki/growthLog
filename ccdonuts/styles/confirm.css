@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+
+
+/* ＝＝＝＝＝入力確認領域共通＝＝＝＝＝ */
+.registerConfirmCon, .cardConfirmCon {
+  width: 100%;
+  height: fit-content;
+  padding: 40px 80px;
+  position: relative;
+  padding-bottom: 128px;
+}
+
+.registerConfirmCon .formGroup,
+.cardConfirmCon .formGroup {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  width: 500px;
+  gap: 32px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.registerConfirmCon .formGroup li,
+.cardConfirmCon .formGroup li {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  gap: 8px;
+}
+.registerConfirmCon .formGroup p,
+.cardConfirmCon .formGroup p {
+  color: #7F5539;
+  line-height: 1;
+}
+.registerConfirmCon .formGroup .output,
+.cardConfirmCon .formGroup .output {
+  width: 500px;
+  border-left: 2px solid #7F5539;
+  padding:8px 0 8px 12px;
+  line-height: 1.2;
+  color: black;
+}
+
+.registerConfirmCon .registerConfirmBtn,
+.cardConfirmCon .cardConfirmBtn {
+  display: flex;
+  color: #fff;
+  background-color: #7F5539;
+  font-size: 24px;
+  padding: 16px 32px ;
+  text-align: center;
+  margin: auto auto;
+  justify-content: center;
+}
+
+
+
+/* ＝＝＝＝＝ユーザー情報入力確認領域＝＝＝＝＝ */
+
+
+
+
+
+/* ＝＝＝＝＝カード情報入力確認領域＝＝＝＝＝ */
+
+
+.cardConfirmCon .formGroup p {
+  display: flex;
+  gap: 50px;
+}
+
+.expiryLabel {
+  color: #7F5539;
+  font-size: 24px;
+}
+
+
+
+
+/* ＝＝＝＝＝購入確認領域＝＝＝＝＝ */
+.purchaseConfirmSec {
+  padding-bottom: 120px;
+}
+.purchaseConfirmSec h3{
+  font-size: 24px;
+  color: #7F5539;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.purchaseConfirmCon {
+  margin: 0 auto;
+  margin-bottom: 64px;
+  width: 1040px;
+}
+
+.purchaseConfirmCate {
+  display: flex;
+  padding: 32px 16px;
+  width: 1040px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 32px;
+  border-top: 1px solid #F7D1CD;
+  border-bottom: 1px solid #F7D1CD;
+}
+
+.purchaseConfirmItems {
+  margin-bottom: 32px;
+}
+.purchaseConfirmItems:last-child {
+  margin-bottom: 0;
+}
+
+.purchaseConfirmCate .purchaseConfirmItem {
+  display: flex;
+}
+
+.purchaseConfirmCate .purchaseConfirmItem h4 {
+  font-size: 24px;
+  color: #7F5539;
+  width: 168px;
+  border-right: 2px solid #F7D1CD ;
+  padding: 12px 0;
+}
+
+.purchaseConfirmCate .purchaseConfirmItem p {
+  font-size: 24px;
+  padding: 12px 0;
+  padding-left: 24px;
+}
+
+.registerCardBtn, .purchaseResultBtn {
+  display: flex;
+  width: fit-content;
+  font-size: 24px;
+  padding: 24px 60px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #7F5539;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.registerNewCardForm {
+  border-top: 1px solid #F7D1CD;
+}
+
+.registerNewCardBtn {
+  margin-top: 24px;
+}
+
+.purchaseResultForm {
+  margin-top: 60px;
+}
+
+.purchaseConfirmNote {
+  display: flex;
+  font-size: 20px;
+  color: #7F5539;
+  justify-content: center;
+  text-align: center;
+}

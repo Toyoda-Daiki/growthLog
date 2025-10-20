@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+
+/* ＝＝＝＝＝ログインフォーム領域＝＝＝＝＝ */
+
+.loginFormCon {
+  padding-bottom: 120px;
+}
+
+.loginFormCate {
+  width: 100%;
+  height: 500px;
+  padding: 80px 80px;
+  border: 2px solid #F7D1CD;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.loginFormCate .formGroup {
+  margin-bottom: 40px;
+}
+
+.loginFormCate .formGroup2 {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  width: 400px;
+  gap: 16px;
+  margin: 0 auto;
+}
+.loginFormCate .formGroup2:first-child {
+  margin-bottom: 40px;
+}
+
+.loginFormCate .formGroup2 label {
+  pointer-events: none;
+  cursor: default;
+  color: #7F5539;
+}
+
+
+.loginFormCate .formGroup2 input[type="email"],
+.loginFormCate .formGroup2 input[type="password"] {
+  width: 100%;
+  border: 1px solid #7F5539;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+
+.loginFormCate .loginBtn {
+  display: flex;
+  color: #fff;
+  background-color: #7F5539;
+  font-size: 24px;
+  padding: 16px 32px ;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  justify-content: center;
+}
+
+.loginFormCon .newAccount {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #7F5539;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+
+/* ＝＝＝＝＝ログインフォーム領域＝＝＝＝＝ */
+
+.logoutFormCon {
+  padding-bottom: 120px;
+}
+
+.logoutFormCate {
+  width: 100%;
+  height: 800px;
+  padding: 80px 80px;
+  border: 2px solid #F7D1CD;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+.logoutFormCate .logoutText {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  width: 600px;
+  gap: 32px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logoutFormCate .formGroup2:first-child {
+  margin-bottom: 40px;
+}
+
+.logoutFormCate .logoutText {
+  pointer-events: none;
+  cursor: default;
+  color: #7F5539;
+}
+
+.logoutFormCate .logoutBtnCate {
+  width: fit-content;
+}
+.logoutFormCate .logoutBtn {
+  display: flex;
+  position: absolute;
+  color: #fff;
+  background-color: #7F5539;
+  font-size: 24px;
+  padding: 16px 32px ;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  justify-content: center;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logoutFormCon .newAccount {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #7F5539;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+
+
+
+/* ＝＝＝＝＝会員登録フォーム領域＝＝＝＝＝ */
+
+.registerFormCon {
+  padding-bottom: 120px;
+  height: auto;
+}
+
+.registerFormCate {
+  width: 100%;
+  padding: 40px 80px 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.registerFormCate .formGroup {
+  margin-bottom: 80px;
+}
+
+.registerFormCate .formGroup2 {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  width: 500px;
+  gap: 16px;
+  margin: 0 auto;
+}
+.registerFormCate .formGroup2 {
+  margin-bottom: 40px;
+}
+
+.registerFormCate .formGroup2 label {
+  pointer-events: none;
+  cursor: default;
+  color: #7F5539;
+}
+.registerFormCate .formGroup2 label span {
+  color: #FF0000;
+}
+
+.registerFormCate .formGroup2 input[type="text"],
+.registerFormCate .formGroup2 input[type="email"],
+.registerFormCate .formGroup2 input[type="password"] {
+  width: 100%;
+  border: 1px solid #7F5539;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.registerFormCate .formGroup2 .postalGroup {
+  display: flex;
+  gap: 20px;
+  width: 300px;
+}
+
+.registerFormCate .formGroup2 .postalGroup .postalCode1 {
+  width: 40%;
+}
+.registerFormCate .formGroup2 .postalGroup .postalCode1 {
+  width: 50%;
+}
+
+.registerFormCate .formGroup2 .passwordNote {
+  font-size: 12px;
+  color: #FF0000;
+  margin-left: 12px;
+}
+
+
+.registerFormCate .registerConfirmBtn {
+  display: flex;
+  color: #fff;
+  background-color: #7F5539;
+  font-size: 24px;
+  padding: 16px 32px ;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+
+
+/* ＝＝＝＝＝カード登録フォーム領域＝＝＝＝＝ */
+
+.cardFormCate {
+  display: grid;
+  background: white;
+  padding: 20px 0 80px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.formTitle {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.titleUnderline {
+  width: 100px;
+  height: 3px;
+  background: #FFD700;
+  margin: 0 auto 40px;
+}
+
+
+.formLabel {
+  display: block;
+  color: #7F5539;
+  font-size: 24px;
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.requiredMark {
+  color: #FF0000;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #7F5539;
+  font-size: 24px;
+  transition: border-color 0.3s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #FFD700;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  max-width: 210px;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+}
+
+.radioInput {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-right: 6px;
+  position: relative;
+  background: white;
+}
+
+.radioInput:checked {
+  background: #333;
+}
+
+.radioLabel {
+  font-size: 24px;
+  color: #7F5539;
+}
+
+.expiryGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.expiryItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.expiryInput {
+  width: 140px;
+  padding: 12px;
+  border: 2px solid #7F5539;
+  font-size: 24px;
+  transition: border-color 0.3s;
+}
+
+.expiryInput:focus {
+  outline: none;
+  border-color: #FFD700;
+}
+
+.expiryLabel {
+  color: #7F5539;
+  font-size: 24px;
+}
+
+.cardConfirmBtn {
+  display: flex;
+  color: #fff;
+  background-color: #7F5539;
+  font-size: 24px;
+  padding: 16px 32px ;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}

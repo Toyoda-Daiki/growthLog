@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+header {
+  max-width: 100vw;
+  min-width: 1200px;
+}
+
+/* ＝＝＝＝＝ヘッダーメイン＝＝＝＝＝ */
+.headerMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 118px;
+  background-color: #EDE0D4;
+}
+
+.headerMain .logo {
+  position: absolute;
+  width: 87px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerMain .cart a {
+  position: absolute;
+  top: 50%;
+  /* right: 96px; */
+  left: calc(100% - 96px);
+  width: 36px;
+  font-size: 12px;
+  line-height: 1;
+  color: #7F5539;
+  transform: translateY(-50%);
+}
+
+.headerMain .login a {
+  position: absolute;
+  top: 50%;
+  /* right: 172px; */
+  left: calc(100% - 172px);
+  width: fit-content;
+  font-size: 12px;
+  line-height: 1;
+  color: #7F5539;
+  transform: translateY(-50%);
+}
+
+.headerMain .cart img, .headerMain .login img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 6px;
+}
+
+/*===== ドロワー PC版の上から出現用 ======*/
+.drawer .menuBtn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 54px;
+  max-height: 54px;
+  top: 50%;
+  right: calc(100% - 96px);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.drawerCloseBtn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 54px;
+  max-height: 54px;
+  top: 12px;
+  right: 96px;
+}
+.drawerCloseBtn img {
+  width: 100%;
+}
+
+.drawerContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  transform: translateY(-100%);
+  background-color: #7F5539BF;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.drawerContent .logo2 {
+  width: 87px;
+  margin: 0 auto 40px;
+}
+
+.drawerContent ul {
+  width: 560px;
+  height: 240px;
+  margin: 0 auto;
+
+}
+
+.drawerContent ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 48px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.drawerContent ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  
+}
+
+.drawerContent.active {
+  transform: translateY(0);
+}
+
+
+/*===== ドロワー PC版の左から出現用 ======*/
+/* .drawer .menuBtn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 54px;
+  max-height: 54px;
+  top: 50%;
+  left: 96px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.drawerCloseBtn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 54px;
+  max-height: 54px;
+  top: 12px;
+  right: 12px;
+}
+
+.drawerContent {
+  top: 0;
+  left: 0;
+  width: 584px;
+  height: 748px;
+  transform: translateX(-100%);
+  padding: 20px 80px 230px 104px;
+  background-color: #7F5539BF;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.drawerContent .logo2 {
+  width: 87px;
+  margin-bottom: 100px;
+}
+
+.drawerContent ul {
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;
+
+}
+
+.drawerContent ul li {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  height: 64px;
+  border-bottom: 1px solid #fff;
+}
+
+.drawerContent ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  
+}
+
+.drawerContent.active {
+  transform: translateY(0);
+} */
+
+
+
+
+
+/*===== メイン共通部分 ======*/
+body {
+  max-width: 100vw;
+  min-width: 1200px;
+}
+
+section {
+  width: 100%;
+}
+.innerWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+h2 {
+  width: fit-content;
+  font-size: 32px;
+  line-height: 2.25;
+  border-bottom: 2px solid #FFD233;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 80px 0;
+}
+
+/* ＝＝＝＝＝パンくず＝＝＝＝＝ */
+.top{
+  width: 100%;
+  height: fit-content;
+}
+.top .account {
+  font-size: 12px;
+  color: #7F5539;
+  position: relative;
+  padding-left: 104px;
+  line-height: 2;
+}
+
+.top .account2, .top .breadcrumb {
+  font-size: 12px;
+  color: #7F5539;
+  position: relative;
+  padding-left: 104px;
+  line-height: 2;
+  border-bottom: 1px solid #7F5539;
+}
+
+
+
+
+
+
+/* ＝＝＝＝＝ヘッダーサブ＝＝＝＝＝ */
+.headerSub {
+  position: relative;
+  max-width: 100vw;
+  min-width: 1200px;
+  height: 64px;
+  background-color: #B392AC;
+}
+
+.searchForm {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 96px;
+  transform: translateY(-50%);
+  width: 360px;
+  background-color: #fff;
+  border: 1px solid #7F5539;
+}
+.searchBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-right: 1px solid #7F5539;
+  justify-self: center;
+  align-items: center;
+  cursor: pointer;
+}
+.searchBtn img {
+  display: block;
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+}
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+
+/* ＝＝＝＝＝フッター領域＝＝＝＝＝ */
+footer {
+  position: relative;
+  max-width: 100vw;
+  min-width: 1200px;
+  height: 448px;
+  background-color: #EDE0D4;
+}
+footer .logo {
+  position: absolute;
+  width: 144px;
+  height: 128px;
+  top: 124px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*===== リンク ======*/
+.link {
+  position: absolute;
+  width: fit-content;
+  top: 20px;
+  left: 104px;
+}
+
+.link ul {
+  display: flex;
+  width: fit-content;
+
+}
+
+.link li {
+  font-size: 16px;
+  line-height: 1;
+  width: 170px;
+  height: 40px;
+  padding: 12px 0 12px 12px;
+  border-left: 2px solid #B392AC;
+  color: #7F5539;
+}
+
+
+/*===== SNS ======*/
+.SNS {
+  position: absolute;
+  width: fit-content;
+  top: 324px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.SNS ul {
+  display: flex;
+  width: fit-content;
+  gap: 40px
+}
+
+.SNS li, .SNS a, .SNS img {
+  height: 32px;
+}
+
+
+/*===== コピーライト ======*/
+.copy {
+  position: absolute;
+  display: flex;
+  height: 52px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  border-top: 2px solid #7F5539;
+  color: #7F5539;
+  font-size: 12px;
+}
+
+
+
+
+/* スマホ版（768px以下: 左から出現） */
+@media screen and (max-width: 768px) {
+  /*===== ドロワー PC版の左から出現用 ======*/
+  .drawer .menuBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    max-height: 25px;
+    top: 50%;
+    right: calc(100% - 96px);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .menuBtn img {
+    width: 25px;
+    height: 25px;
+  }
+  .drawerContent {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+  }
+
+  .drawerCloseBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 26px;
+    max-height: 26px;
+    top: 12px;
+    right: 12px;
+  }
+  .drawerCloseBtn img {
+    width: 100%;
+  }
+
+  .drawerContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 488px;
+    transform: translateY(-100%);
+    background-color: #7F5539BF;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    padding: 0 0 ;
+  }
+
+  .drawerContent .logo2 {
+    width: 87px;
+    margin: 12px 0 60px 12px;
+  }
+
+  .drawerContent ul {
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .drawerContent ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    height: 48px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding-left: 12px;
+  }
+
+  .drawerContent ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    
+  }
+
+  .drawerContent.active {
+    transform: translateY(0);
+  }
+}
